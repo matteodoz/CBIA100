@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Thomas Matthew M. Quintela | Projects</title>
+    <title>Thomas Matthew M. Quintela</title>
 
     <style>
         * {
@@ -14,691 +12,173 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #080808;
-            color: white;
+            background: #f5f9ff;
+            color: #0f172a;
         }
 
         .container {
             width: 90%;
-            max-width: 1150px;
+            max-width: 1100px;
             margin: auto;
         }
 
-        /* NAVIGATION */
-
         nav {
-            height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
+            padding: 30px 0;
             font-size: 22px;
             font-weight: bold;
             letter-spacing: 3px;
+            color: #2563eb;
         }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        nav a {
-            color: #888;
-            text-decoration: none;
-            font-size: 13px;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        /* HERO */
 
         .hero {
-            min-height: 520px;
+            min-height: 420px;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-align: center;
-
-            border: 1px solid #222;
-            border-radius: 25px;
-
-            background:
-                radial-gradient(circle at top, #292929, #111 45%, #080808 75%);
-        }
-
-        .hero-content {
-            max-width: 850px;
-            padding: 40px;
-        }
-
-        .small-title {
-            color: #777;
-            font-size: 12px;
-            letter-spacing: 5px;
-            margin-bottom: 22px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #2563eb, #60a5fa);
+            color: white;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18);
         }
 
         .hero h1 {
-            font-size: 68px;
-            line-height: 0.95;
-            letter-spacing: -3px;
-            margin-bottom: 25px;
+            font-size: 58px;
+            margin-bottom: 20px;
         }
 
         .hero p {
-            color: #aaa;
-            font-size: 18px;
-            line-height: 1.7;
-            max-width: 650px;
-            margin: auto;
-            margin-bottom: 35px;
-        }
-
-        .button {
-            display: inline-block;
-            background: white;
-            color: black;
-            text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 40px;
-            border: 1px solid white;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background: transparent;
-            color: white;
-        }
-
-        /* PROJECT SECTION */
-
-        .section-title {
-            margin-top: 110px;
-            margin-bottom: 40px;
-        }
-
-        .section-title span {
-            display: block;
-            color: #666;
-            font-size: 12px;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-        }
-
-        .section-title h2 {
-            font-size: 43px;
-        }
-
-        /* PROJECT CARDS */
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .project-card {
-            background: #111;
-            border: 1px solid #222;
-            border-radius: 20px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-7px);
-            border-color: #555;
-        }
-
-        .project-preview {
-            height: 190px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #050505,
-                    #252525,
-                    #090909
-                );
-
-            border-bottom: 1px solid #222;
-        }
-
-        .project-preview span {
-            font-size: 44px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .project-content {
-            padding: 25px;
-        }
-
-        .project-number {
-            color: #666;
-            font-size: 11px;
-            margin-bottom: 12px;
-        }
-
-        .project-content h3 {
-            font-size: 21px;
-            margin-bottom: 10px;
-            word-break: break-word;
-        }
-
-        .project-content p {
-            color: #888;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .project-link {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            padding-bottom: 4px;
-            border-bottom: 1px solid #555;
-        }
-
-        .project-link:hover {
-            border-color: white;
-        }
-
-        /* LOADING */
-
-        .loading {
-            color: #888;
-            padding: 30px 0;
-        }
-
-        /* ABOUT */
-
-        .about {
-            margin-top: 120px;
-            padding: 80px 0;
-
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 70px;
-
-            border-top: 1px solid #222;
-            border-bottom: 1px solid #222;
-        }
-
-        .about h2 {
-            font-size: 43px;
-        }
-
-        .about p {
-            color: #aaa;
+            color: #dbeafe;
             font-size: 17px;
-            line-height: 1.8;
         }
 
-        /* FOOTER */
+        .projects {
+            padding: 90px 0;
+        }
+
+        .projects h2 {
+            font-size: 38px;
+            margin-bottom: 35px;
+            color: #1d4ed8;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #dbeafe;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #60a5fa;
+            box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15);
+        }
+
+        .card span {
+            color: #60a5fa;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            font-size: 26px;
+            margin: 15px 0 25px;
+            color: #0f172a;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #2563eb;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background: #1d4ed8;
+        }
 
         footer {
-            padding: 40px 0;
-            display: flex;
-            justify-content: space-between;
-            color: #666;
+            border-top: 1px solid #dbeafe;
+            padding: 35px 0;
+            color: #64748b;
             font-size: 13px;
         }
 
-        /* MOBILE */
-
-        @media (max-width: 850px) {
-
+        @media (max-width: 700px) {
             .hero h1 {
-                font-size: 47px;
+                font-size: 40px;
             }
 
-            .projects-grid {
+            .project-grid {
                 grid-template-columns: 1fr;
             }
-
-            .about {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
         }
-
-        @media (max-width: 600px) {
-
-            nav {
-                flex-direction: column;
-                justify-content: center;
-                gap: 15px;
-                height: 120px;
-            }
-
-            nav ul {
-                gap: 18px;
-            }
-
-            .hero {
-                min-height: 470px;
-            }
-
-            .hero h1 {
-                font-size: 39px;
-            }
-
-            .section-title h2,
-            .about h2 {
-                font-size: 33px;
-            }
-
-            footer {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-
     </style>
 </head>
-
 
 <body>
 
 <div class="container">
 
-    <!-- NAVIGATION -->
-
     <nav>
-
-        <div class="logo">
-            TQ.
-        </div>
-
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#about">ABOUT</a></li>
-        </ul>
-
+        TQ.
     </nav>
 
+    <section class="hero">
+        <div>
+            <h1>Thomas Matthew M. Quintela</h1>
+            <p>CBIA100 Student Portfolio</p>
+        </div>
+    </section>
 
-    <!-- HERO -->
+    <section class="projects">
 
-    <section class="hero" id="home">
+        <h2>Projects</h2>
 
-        <div class="hero-content">
+        <div class="project-grid">
 
-            <div class="small-title">
-                CBIA100 PROJECT PORTFOLIO
+            <div class="card">
+                <span>01</span>
+                <h3>Module 2 Activity</h3>
+
+                <a href="module2.html">
+                    Open Website
+                </a>
             </div>
 
-            <h1>
-                Thomas Matthew<br>
-                M. Quintela
-            </h1>
+            <div class="card">
+                <span>02</span>
+                <h3>Eportfolio</h3>
 
-            <p>
-                A collection of my recent HTML projects,
-                activities, and web development work.
-            </p>
-
-            <a href="#projects" class="button">
-                Explore Projects
-            </a>
+                <a href="eportfolio.html">
+                    Open Website
+                </a>
+            </div>
 
         </div>
 
     </section>
-
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-        <div class="section-title">
-
-            <span>
-                SELECTED WORK
-            </span>
-
-            <h2>
-                My Projects
-            </h2>
-
-        </div>
-
-        <div id="projectsContainer" class="projects-grid">
-
-            <p class="loading">
-                Loading projects from GitHub...
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section class="about" id="about">
-
-        <div>
-
-            <h2>
-                About Me
-            </h2>
-
-        </div>
-
-        <div>
-
-            <p>
-                Hi, I'm Thomas Matthew M. Quintela.
-                This website contains a compilation of my
-                HTML projects and coding activities for CBIA100.
-                Each project can be opened directly as a live
-                website through GitHub Pages.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
 
     <footer>
-
-        <p>
-            © 2026 Thomas Matthew M. Quintela
-        </p>
-
-        <p>
-            HTML • CSS • JavaScript
-        </p>
-
+        © 2026 Thomas Matthew M. Quintela
     </footer>
 
 </div>
 
-
-<script>
-
-    /*
-        YOUR GITHUB INFORMATION
-    */
-
-    const githubUsername = "matteodoz";
-    const repositoryName = "CBIA100";
-
-
-    /*
-        LIVE WEBSITE LOCATION
-
-        IMPORTANT:
-        This is GitHub Pages, NOT github.com/blob
-
-        Meaning it opens the actual website.
-    */
-
-    const pagesBase =
-        "https://" +
-        githubUsername +
-        ".github.io/" +
-        repositoryName +
-        "/";
-
-
-    /*
-        LOAD PROJECTS FROM REPOSITORY
-    */
-
-    async function loadProjects() {
-
-        const container =
-            document.getElementById("projectsContainer");
-
-        try {
-
-            /*
-                First find the default branch.
-            */
-
-            const repoResponse = await fetch(
-                "https://api.github.com/repos/" +
-                githubUsername +
-                "/" +
-                repositoryName
-            );
-
-            if (!repoResponse.ok) {
-                throw new Error("Repository could not be loaded.");
-            }
-
-            const repoInformation =
-                await repoResponse.json();
-
-            const branch =
-                repoInformation.default_branch;
-
-
-            /*
-                Get every file inside repository,
-                including files inside folders.
-            */
-
-            const treeResponse = await fetch(
-                "https://api.github.com/repos/" +
-                githubUsername +
-                "/" +
-                repositoryName +
-                "/git/trees/" +
-                branch +
-                "?recursive=1"
-            );
-
-            if (!treeResponse.ok) {
-                throw new Error("Files could not be loaded.");
-            }
-
-            const treeData =
-                await treeResponse.json();
-
-
-            /*
-                ONLY KEEP HTML FILES.
-
-                index.html is excluded because that
-                is this landing page.
-            */
-
-            const htmlFiles =
-                treeData.tree.filter(file => {
-
-                    return (
-                        file.type === "blob" &&
-                        file.path.toLowerCase().endsWith(".html") &&
-                        file.path.toLowerCase() !== "index.html"
-                    );
-
-                });
-
-
-            container.innerHTML = "";
-
-
-            /*
-                If repository has no other HTML pages.
-            */
-
-            if (htmlFiles.length === 0) {
-
-                container.innerHTML = `
-                    <p class="loading">
-                        No HTML projects found yet.
-                    </p>
-                `;
-
-                return;
-            }
-
-
-            /*
-                MAKE ONE CARD FOR EVERY HTML FILE
-            */
-
-            htmlFiles.forEach((file, index) => {
-
-                /*
-                    Turn:
-
-                    my-first-project.html
-
-                    into:
-
-                    My First Project
-                */
-
-                const fileName =
-                    file.path
-                        .split("/")
-                        .pop()
-                        .replace(".html", "")
-                        .replace(/[-_]/g, " ");
-
-
-                const title =
-                    fileName.replace(
-                        /\b\w/g,
-                        letter => letter.toUpperCase()
-                    );
-
-
-                /*
-                    Encode spaces and special characters
-                    correctly for the URL.
-                */
-
-                const encodedPath =
-                    file.path
-                        .split("/")
-                        .map(part => encodeURIComponent(part))
-                        .join("/");
-
-
-                /*
-                    THIS IS THE IMPORTANT PART.
-
-                    We link to GitHub Pages.
-
-                    NOT:
-
-                    github.com/.../blob/...
-
-                    So the browser displays the website
-                    instead of displaying the code.
-                */
-
-                const liveWebsite =
-                    pagesBase + encodedPath;
-
-
-                const card =
-                    document.createElement("div");
-
-                card.className =
-                    "project-card";
-
-
-                card.innerHTML = `
-
-                    <div class="project-preview">
-
-                        <span>
-                            ${String(index + 1).padStart(2, "0")}
-                        </span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-number">
-                            PROJECT ${String(index + 1).padStart(2, "0")}
-                        </div>
-
-                        <h3>
-                            ${title}
-                        </h3>
-
-                        <p>
-                            HTML Web Project
-                        </p>
-
-                        <a
-                            href="${liveWebsite}"
-                            class="project-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Open Website ↗
-                        </a>
-
-                    </div>
-
-                `;
-
-
-                container.appendChild(card);
-
-            });
-
-
-        }
-
-        catch (error) {
-
-            console.log(error);
-
-            container.innerHTML = `
-
-                <p class="loading">
-                    Projects could not be loaded.
-                    Make sure the repository is public
-                    and GitHub Pages is enabled.
-                </p>
-
-            `;
-
-        }
-
-    }
-
-
-    /*
-        START WHEN PAGE LOADS
-    */
-
-    loadProjects();
-
-</script>
-
-
 </body>
-
 </html>
