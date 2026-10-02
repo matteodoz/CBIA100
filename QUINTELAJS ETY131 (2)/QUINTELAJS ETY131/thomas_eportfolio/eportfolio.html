@@ -1,153 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas Quintela | E-Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thomas Matthew M. Quintela | Eportfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f9ff;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: #2563eb;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #334155;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 500px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 50px 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #1d4ed8,
+                    #3b82f6,
+                    #93c5fd
+                );
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero-small {
+            font-size: 13px;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            color: #dbeafe;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #dbeafe;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #eff6ff;
+            font-size: 17px;
+        }
+
+        /* BUTTON */
+
+        .button {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 13px 25px;
+
+            background-color: white;
+            color: #2563eb;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            background-color: #dbeafe;
+        }
+
+        /* MAIN CONTENT */
+
+        main {
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title p {
+            color: #3b82f6;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .section-title h2 {
+            color: #1d4ed8;
+            font-size: 38px;
+        }
+
+        /* ABOUT */
+
+        .about-card {
+            background-color: white;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(37, 99, 235, 0.10);
+        }
+
+        .about-card h3 {
+            color: #2563eb;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        /* INFORMATION */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background-color: #eff6ff;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            text-align: center;
+        }
+
+        .info-box h4 {
+            color: #1d4ed8;
+            margin-bottom: 8px;
+        }
+
+        .info-box p {
+            color: #64748b;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* ACTIVITIES */
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .activity-card {
+            background-color: white;
+
+            border: 1px solid #dbeafe;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(37, 99, 235, 0.08);
+
+            transition: 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(37, 99, 235, 0.15);
+        }
+
+        .number {
+            color: #60a5fa;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .activity-card h3 {
+            color: #1d4ed8;
+            font-size: 24px;
+
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .activity-card p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .activity-card a {
+            display: inline-block;
+
+            text-decoration: none;
+
+            background-color: #2563eb;
+            color: white;
+
+            padding: 11px 20px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .activity-card a:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* REFLECTION */
+
+        .reflection {
+            background:
+                linear-gradient(
+                    135deg,
+                    #1d4ed8,
+                    #3b82f6
+                );
+
+            color: white;
+
+            padding: 45px;
+
+            border-radius: 20px;
+        }
+
+        .reflection h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .reflection p {
+            color: #dbeafe;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #1d4ed8;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #dbeafe;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
 </head>
+
+
 <body>
 
-  <header>
-    <h1>Thomas Matthew M. Quintela</h1>
-    <p class="tagline">“Tutto Passa”</p>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#project">Project</a>
-      <a href="#activities">Activities</a>
-      <a href="#journey">Journey</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div>
-        <h2>Hello, I'm Thomas.</h2>
-        <p>I am a first-year Bachelor of Science in Marketing student at Mapúa Malayan Colleges Laguna.</p>
-        <button onclick="showMessage()">More About Me</button>
-        <p id="message"></p>
-      </div>
+<!-- NAVIGATION -->
 
-      <aside class="photo-box">
-        <img src="intro.png" alt="Thomas Matthew M. Quintela">
-      </aside>
-    </section>
+<nav>
+
+    <div class="logo">
+        TQ.
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#activities">Activities</a>
+        </li>
+
+        <li>
+            <a href="#reflection">Reflection</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            MY EPORTFOLIO
+        </div>
+
+        <h1>
+            Thomas Matthew M. Quintela
+        </h1>
+
+        <h2>
+            CBIA100 Student Portfolio
+        </h2>
+
+        <p>
+            Welcome to my eportfolio. This website contains
+            my activities, projects, and experiences while
+            learning HTML, CSS, and basic web development.
+        </p>
+
+        <a href="#activities" class="button">
+            View My Activities
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- ABOUT -->
 
     <section id="about">
-      <h2>About Me</h2>
-      <article>
-        <p>I am currently a first-year college student pursuing a Bachelor of Science in Marketing. My interests include entrepreneurship, going to the gym, and listening to music.</p>
-        <p>I enjoy learning from real experiences, especially in business. I like finding opportunities, planning ideas, and improving myself through school, work, and entrepreneurship.</p>
-      </article>
-    </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Adaptability</h3>
-          <p>I can adjust to new situations and learn from different experiences.</p>
-        </article>
-        <article class="card">
-          <h3>Planning</h3>
-          <p>I like organizing my ideas, goals, and steps before starting something.</p>
-        </article>
-        <article class="card">
-          <h3>Communication</h3>
-          <p>I learned how to communicate better through work and dealing with customers.</p>
-        </article>
-        <article class="card">
-          <h3>Customer Service</h3>
-          <p>Working at Yellow Cab helped me learn patience, teamwork, and customer service.</p>
-        </article>
-      </div>
-    </section>
+        <div class="section-title">
 
-    <section id="project">
-      <h2>Project</h2>
-      <article class="project-box">
-        <h3>My Buy-and-Sell Business</h3>
-        <p>I am currently working on my own buy-and-sell business. I use online platforms such as Carousell to find products, post listings, talk to customers, negotiate prices, and complete sales.</p>
-        <p>One of my proudest achievements is earning my first <strong>₱40,000</strong> through buy-and-sell. This experience helped me learn more about sales, pricing, customer communication, and entrepreneurship.</p>
-        <div class="event-photo">
-          <img src="carousell.png" alt="Carousell lifetime earnings achievement">
+            <p>
+                ABOUT
+            </p>
+
+            <h2>
+                About Me
+            </h2>
+
         </div>
-      </article>
+
+
+        <div class="about-card">
+
+            <h3>
+                Hello, I'm Thomas!
+            </h3>
+
+            <p>
+                I am Thomas Matthew M. Quintela, a student
+                currently learning the fundamentals of coding
+                and web development.
+            </p>
+
+            <p>
+                Through my activities, I have learned how to
+                create webpages using HTML and improve their
+                appearance using CSS. This eportfolio serves
+                as a collection of my work and progress.
+            </p>
+
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h4>
+                        Course
+                    </h4>
+
+                    <p>
+                        CBIA100
+                    </p>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <h4>
+                        Focus
+                    </h4>
+
+                    <p>
+                        HTML & CSS
+                    </p>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <h4>
+                        Portfolio
+                    </h4>
+
+                    <p>
+                        2026
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+
+    <!-- ACTIVITIES -->
 
     <section id="activities">
-      <h2>Activities & Achievements</h2>
-      <article>
-        <h3>Mr. & Ms. OLFU SHS Laguna</h3>
-        <p>I joined Mr. & Ms. OLFU SHS Laguna while I was a Senior High School student. Joining the event helped me become more confident, especially when speaking and presenting myself in front of other people.</p>
-        <p>I became <strong>Mr. STEM First Runner-Up</strong>.</p>
-        <div class="event-photo">
-          <img src="pageant.png" alt="Mr. and Ms. OLFU SHS Laguna pageant">
+
+        <div class="section-title">
+
+            <p>
+                MY WORK
+            </p>
+
+            <h2>
+                Activities & Projects
+            </h2>
+
         </div>
-      </article>
 
-      <article>
-        <h3>Awards</h3>
-        <ul>
-          <li>Cultural Arts Award — Emmanuel Christian School</li>
-          <li>Best in Research Award — Emmanuel Christian School</li>
-          <li>Mr. STEM First Runner-Up — Our Lady of Fatima University Laguna</li>
-          <li>Earned my first ₱40,000 through buy-and-sell</li>
-        </ul>
-      </article>
+
+        <div class="activity-grid">
+
+
+            <!-- MODULE 2 -->
+
+            <div class="activity-card">
+
+                <span class="number">
+                    PROJECT 01
+                </span>
+
+                <h3>
+                    Module 2 Activity
+                </h3>
+
+                <p>
+                    This activity demonstrates my understanding
+                    of HTML structure, webpage elements, and
+                    basic CSS styling.
+                </p>
+
+                <a href="module2.html">
+                    Open Activity
+                </a>
+
+            </div>
+
+
+
+            <!-- LANDING PAGE -->
+
+            <div class="activity-card">
+
+                <span class="number">
+                    PROJECT 02
+                </span>
+
+                <h3>
+                    Portfolio Landing Page
+                </h3>
+
+                <p>
+                    A landing page created to organize and
+                    showcase my coding projects in one website.
+                </p>
+
+                <a href="index.html">
+                    Open Landing Page
+                </a>
+
+            </div>
+
+
+        </div>
+
     </section>
 
-    <section id="journey">
-      <h2>Journey & Experience</h2>
 
-      <article class="timeline-item">
-        <h3>Emmanuel Christian School</h3>
-        <p><strong>Junior High School</strong></p>
-        <p>I studied at Emmanuel Christian School for Junior High School. This was where I received my Cultural Arts Award and Best in Research Award.</p>
-      </article>
 
-      <article class="timeline-item">
-        <h3>Our Lady of Fatima University - Laguna</h3>
-        <p><strong>Senior High School</strong></p>
-        <p>I studied STEM at OLFU Laguna. Joining Mr. & Ms. OLFU SHS Laguna helped me gain confidence and become more comfortable speaking in front of people.</p>
-      </article>
+    <!-- REFLECTION -->
 
-      <article class="timeline-item">
-        <h3>Yellow Cab</h3>
-        <p><strong>Seasonal Employee</strong></p>
-        <p>Working at Yellow Cab taught me how to communicate with customers, work with a team, stay patient, and provide good customer service during busy hours.</p>
-      </article>
+    <section id="reflection">
 
-      <article class="timeline-item">
-        <h3>Buy-and-Sell</h3>
-        <p><strong>Entrepreneurial Experience</strong></p>
-        <p>I started buying and reselling items online. I learned how to make listings, negotiate, communicate with buyers, and manage sales. I eventually earned my first ₱40,000 from this.</p>
-      </article>
+        <div class="section-title">
 
-      <article class="timeline-item">
-        <h3>Mapúa Malayan Colleges Laguna</h3>
-        <p><strong>College</strong></p>
-        <p>I am currently a first-year Bachelor of Science in Marketing student. I want to continue improving my skills in business, marketing, and entrepreneurship.</p>
-      </article>
+            <p>
+                LEARNING
+            </p>
+
+            <h2>
+                My Reflection
+            </h2>
+
+        </div>
+
+
+        <div class="reflection">
+
+            <h3>
+                What I Learned
+            </h3>
+
+            <p>
+                Through these activities, I learned how HTML
+                provides the structure of a webpage while CSS
+                controls its overall design and appearance.
+                I also learned the importance of organizing
+                files correctly when publishing a website.
+                Creating this eportfolio allowed me to apply
+                what I learned and improve my skills in basic
+                web development.
+            </p>
+
+        </div>
+
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <article class="contact-box">
-        <p><strong>Thomas Matthew M. Quintela</strong></p>
-        <p>Email: <a href="mailto:matthewq3007@gmail.com">matthewq3007@gmail.com</a></p>
-        <p>Phone: 09602991494</p>
-      </article>
-    </section>
-  </main>
 
-  <footer>
-    <p>Thomas Matthew M. Quintela | Student E-Portfolio</p>
-    <p>Tutto Passa.</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        Thomas Matthew M. Quintela
+    </h3>
+
+    <p>
+        CBIA100 Eportfolio • 2026
+    </p>
+
+</footer>
+
+
 </body>
+
 </html>
