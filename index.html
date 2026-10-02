@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Thomas Matthew M. Quintela</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +16,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f9ff;
+            background-color: #f4f8ff;
             color: #0f172a;
         }
 
@@ -24,35 +26,52 @@
             margin: auto;
         }
 
+        /* HEADER */
+
         nav {
             padding: 30px 0;
             font-size: 22px;
             font-weight: bold;
-            letter-spacing: 3px;
             color: #2563eb;
+            letter-spacing: 3px;
         }
+
+        /* HERO */
 
         .hero {
             min-height: 420px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             text-align: center;
-            border-radius: 22px;
-            background: linear-gradient(135deg, #2563eb, #60a5fa);
+
+            background: linear-gradient(
+                135deg,
+                #1d4ed8,
+                #3b82f6,
+                #93c5fd
+            );
+
             color: white;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18);
+            border-radius: 22px;
+            padding: 40px;
+
+            box-shadow:
+                0 12px 30px
+                rgba(37, 99, 235, 0.18);
         }
 
         .hero h1 {
             font-size: 58px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .hero p {
             color: #dbeafe;
-            font-size: 17px;
+            font-size: 18px;
         }
+
+        /* PROJECT SECTION */
 
         .projects {
             padding: 90px 0;
@@ -60,8 +79,8 @@
 
         .projects h2 {
             font-size: 38px;
-            margin-bottom: 35px;
             color: #1d4ed8;
+            margin-bottom: 35px;
         }
 
         .project-grid {
@@ -70,19 +89,29 @@
             gap: 25px;
         }
 
+        /* CARD */
+
         .card {
-            background: white;
+            background-color: white;
             border: 1px solid #dbeafe;
-            border-radius: 18px;
+            border-radius: 20px;
             padding: 35px;
-            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+
+            box-shadow:
+                0 8px 22px
+                rgba(37, 99, 235, 0.08);
+
             transition: 0.3s;
         }
 
         .card:hover {
             transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 32px
+                rgba(37, 99, 235, 0.15);
+
             border-color: #60a5fa;
-            box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15);
         }
 
         .card span {
@@ -92,34 +121,54 @@
         }
 
         .card h3 {
-            font-size: 26px;
-            margin: 15px 0 25px;
-            color: #0f172a;
+            font-size: 27px;
+            margin-top: 15px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
 
         .card a {
             display: inline-block;
+
             text-decoration: none;
+
+            background-color: #2563eb;
             color: white;
-            background: #2563eb;
+
             padding: 12px 22px;
+
             border-radius: 30px;
+
             font-weight: bold;
+
             transition: 0.3s;
         }
 
         .card a:hover {
-            background: #1d4ed8;
+            background-color: #1d4ed8;
         }
+
+        /* FOOTER */
 
         footer {
             border-top: 1px solid #dbeafe;
+
             padding: 35px 0;
+
             color: #64748b;
+
             font-size: 13px;
         }
 
+        /* PHONE */
+
         @media (max-width: 700px) {
+
             .hero h1 {
                 font-size: 40px;
             }
@@ -127,56 +176,114 @@
             .project-grid {
                 grid-template-columns: 1fr;
             }
+
         }
+
     </style>
 </head>
+
 
 <body>
 
 <div class="container">
 
+
+    <!-- LOGO -->
+
     <nav>
         TQ.
     </nav>
 
+
+    <!-- HERO -->
+
     <section class="hero">
+
         <div>
-            <h1>Thomas Matthew M. Quintela</h1>
-            <p>CBIA100 Student Portfolio</p>
+
+            <h1>
+                Thomas Matthew M. Quintela
+            </h1>
+
+            <p>
+                CBIA100 Student Portfolio
+            </p>
+
         </div>
+
     </section>
+
+
+    <!-- PROJECTS -->
 
     <section class="projects">
 
-        <h2>Projects</h2>
+        <h2>
+            Projects
+        </h2>
 
         <div class="project-grid">
 
-            <div class="card">
-                <span>01</span>
-                <h3>Module 2 Activity</h3>
 
-                <a href="module2.html">
-                    Open Website
-                </a>
-            </div>
+            <!-- MODULE 2 -->
 
             <div class="card">
-                <span>02</span>
-                <h3>Eportfolio</h3>
 
-                <a href="eportfolio.html">
+                <span>
+                    PROJECT 01
+                </span>
+
+                <h3>
+                    Module 2 Activity
+                </h3>
+
+                <p>
+                    View my Module 2 coding activity.
+                </p>
+
+                <a href="./module2.html">
                     Open Website
                 </a>
+
             </div>
+
+
+            <!-- EPORTFOLIO -->
+
+            <div class="card">
+
+                <span>
+                    PROJECT 02
+                </span>
+
+                <h3>
+                    Eportfolio
+                </h3>
+
+                <p>
+                    View my personal Eportfolio project.
+                </p>
+
+                <a href="./eportfolio.html">
+                    Open Website
+                </a>
+
+            </div>
+
 
         </div>
 
     </section>
 
+
+    <!-- FOOTER -->
+
     <footer>
+
         © 2026 Thomas Matthew M. Quintela
+
     </footer>
+
 
 </div>
 
