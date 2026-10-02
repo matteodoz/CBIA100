@@ -1,149 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ninuno</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
 
         body {
-            margin: 0;
             background-color: #F4EEDC;
             color: #2D2B2B;
-            font-family: Georgia, serif;
+            font-family: Georgia;
             text-align: center;
+            margin: 0;
         }
 
         header {
             background-color: #4B2D25;
             color: #F4EEDC;
-            padding-bottom: 30px;
+            padding-bottom: 25px;
         }
 
         .header-image {
-            display: block;
             width: 100%;
-            max-height: 450px;
-            object-fit: cover;
+            height: auto;
         }
 
         header h1 {
-            margin: 35px 0 10px;
-            font-family: Garamond, Georgia, serif;
-            font-size: 60px;
+            font-family: Garamond;
+            font-size: 350%;
         }
 
         header p {
-            font-size: 20px;
+            font-family: Georgia;
+            font-size: 120%;
         }
 
         nav {
             background-color: #567A5C;
-            padding: 18px;
+            padding: 15px;
         }
 
         nav a {
             color: #F4EEDC;
-            margin: 0 20px;
-            font-size: 18px;
+            padding: 15px;
         }
 
         section {
-            padding: 35px 20px;
+            padding: 20px;
         }
 
         h2 {
+            font-family: Garamond;
             color: #4B2D25;
-            font-family: Garamond, Georgia, serif;
         }
 
         h3 {
+            font-family: Garamond;
             color: #913F32;
-            font-family: Garamond, Georgia, serif;
         }
 
         table {
             width: 90%;
-            margin: 30px auto;
+            margin: auto;
             border-collapse: collapse;
             background-color: #E8C7A1;
         }
 
         td {
             border: 2px solid #4B2D25;
-            padding: 25px;
+            padding: 20px;
             text-align: left;
         }
 
         .product-image {
-            width: 360px;
             text-align: center;
             background-color: #F4EEDC;
         }
 
         .product-image img {
-            display: block;
             width: 300px;
             height: 220px;
             object-fit: cover;
-            margin: 0 auto;
-            border-radius: 5px;
         }
 
         .price {
             color: #913F32;
-            font-size: 23px;
+            font-size: 22px;
         }
 
         footer {
             background-color: #2D2B2B;
             color: #F4EEDC;
-            padding: 25px;
+            padding: 20px;
         }
 
         footer h3 {
             color: #E8C7A1;
         }
 
-        @media (max-width: 700px) {
-
-            header h1 {
-                font-size: 45px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-
-            table,
-            tbody,
-            tr,
-            td {
-                display: block;
-                width: 100%;
-            }
-
-            table {
-                width: 92%;
-            }
-
-            .product-image {
-                width: 100%;
-            }
-
-            .product-image img {
-                width: 100%;
-                max-width: 400px;
-                height: auto;
-            }
-        }
     </style>
 
 </head>
@@ -154,11 +109,9 @@
 
 <header>
 
-    <img
-        src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/logo.jpg"
-        alt="Larawan ng kulturang Pilipino"
-        class="header-image"
-    >
+    <img src="logo.png"
+         alt="Larawan ng kulturang Pilipino"
+         class="header-image">
 
     <h1>NINUNO</h1>
 
@@ -199,11 +152,8 @@
 
     <h2>Aming Mga Produkto</h2>
 
-
     <table>
 
-
-        <!-- BARONG -->
 
         <tr>
 
@@ -221,27 +171,20 @@
                     <b>₱1,499</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/barong.jpg"
-                    alt="Barong Tagalog"
-                >
+                <img src="barong.png"
+                     alt="Barong Tagalog">
 
             </td>
 
         </tr>
 
-
-
-        <!-- FILIPINIANA -->
 
         <tr>
 
@@ -259,27 +202,20 @@
                     <b>₱1,799</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/filipiniana.jpg"
-                    alt="Filipiniana"
-                >
+                <img src="filipiniana.png"
+                     alt="Filipiniana">
 
             </td>
 
         </tr>
 
-
-
-        <!-- ABACA SLIPPERS -->
 
         <tr>
 
@@ -297,27 +233,20 @@
                     <b>₱399</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/abaca-slippers.jpg"
-                    alt="Tsinelas na Abaca"
-                >
+                <img src="abaca-slippers.png"
+                     alt="Tsinelas na Abaca">
 
             </td>
 
         </tr>
 
-
-
-        <!-- BANIG -->
 
         <tr>
 
@@ -335,27 +264,20 @@
                     <b>₱650</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/banig.jpg"
-                    alt="Banig"
-                >
+                <img src="banig.png"
+                     alt="Banig">
 
             </td>
 
         </tr>
 
-
-
-        <!-- ABANIKO -->
 
         <tr>
 
@@ -373,27 +295,20 @@
                     <b>₱250</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/abaniko.jpg"
-                    alt="Abaniko o Pamaypay"
-                >
+                <img src="abaniko.png"
+                     alt="Abaniko o Pamaypay">
 
             </td>
 
         </tr>
 
-
-
-        <!-- CAPIZ PAROL -->
 
         <tr>
 
@@ -411,27 +326,20 @@
                     <b>₱1,200</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/capiz-parol.jpg"
-                    alt="Parol na Capiz"
-                >
+                <img src="capiz-parol.png"
+                     alt="Parol na Capiz">
 
             </td>
 
         </tr>
 
-
-
-        <!-- BILAO -->
 
         <tr>
 
@@ -449,19 +357,15 @@
                     <b>₱300</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
+                <a href="#contact">Bumili Ngayon</a>
 
             </td>
 
 
             <td class="product-image">
 
-                <img
-                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/bilao.jpg"
-                    alt="Bilao"
-                >
+                <img src="bilao.png"
+                     alt="Bilao">
 
             </td>
 
@@ -510,4 +414,5 @@
 
 
 </body>
+
 </html>
