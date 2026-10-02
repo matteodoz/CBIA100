@@ -8,7 +8,6 @@
     <title>Ninuno</title>
 
     <style>
-
         body {
             background-color: #F4EEDC;
             color: #2D2B2B;
@@ -79,12 +78,15 @@
         .product-image {
             text-align: center;
             background-color: #F4EEDC;
+            width: 320px;
         }
 
         .product-image img {
             width: 300px;
             height: 220px;
             object-fit: cover;
+            display: block;
+            margin: auto;
         }
 
         .price {
@@ -103,7 +105,6 @@
         }
 
         @media (max-width: 700px) {
-
             table,
             tbody,
             tr,
@@ -120,25 +121,26 @@
                 box-sizing: border-box;
             }
 
+            .product-image {
+                width: 100%;
+            }
+
             .product-image img {
                 width: 100%;
                 height: auto;
                 max-width: 300px;
             }
         }
-
     </style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
     <img
-        src="logo.jpg"
+        src="logo.png"
         alt="Larawan ng kulturang Pilipino"
         class="header-image"
     >
@@ -153,24 +155,17 @@
 
 
 <nav>
-
     <a href="#home">Tahanan</a>
-
     <a href="#products">Mga Produkto</a>
-
     <a href="#contact">Makipag-ugnayan</a>
-
 </nav>
 
 
 <main>
 
-
 <section id="home">
 
-    <h2>
-        Maligayang Pagdating sa Ninuno
-    </h2>
+    <h2>Maligayang Pagdating sa Ninuno</h2>
 
     <p>
         Tuklasin ang mga produktong nagpapakita ng galing,
@@ -180,26 +175,17 @@
 </section>
 
 
-
 <section id="products">
 
-    <h2>
-        Aming Mga Produkto
-    </h2>
-
+    <h2>Aming Mga Produkto</h2>
 
     <table>
 
-
-        <!-- BARONG -->
+        <!-- BARONG TAGALOG -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Barong Tagalog
-                </h3>
+                <h3>Barong Tagalog</h3>
 
                 <p>
                     Isang tradisyunal na kasuotang Pilipino na karaniwang
@@ -211,35 +197,23 @@
                     <b>₱1,499</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="barong.jpg"
+                    src="barong.png"
                     alt="Barong Tagalog"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- FILIPINIANA -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Filipiniana
-                </h3>
+                <h3>Filipiniana</h3>
 
                 <p>
                     Isang eleganteng kasuotang Pilipina na kilala sa
@@ -251,35 +225,23 @@
                     <b>₱1,799</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="filipiniana.jpg"
+                    src="filipiniana.png"
                     alt="Filipiniana"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- ABACA SLIPPERS -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Tsinelas na Abaca
-                </h3>
+                <h3>Tsinelas na Abaca</h3>
 
                 <p>
                     Magaan at matibay na tsinelas na gawa mula sa
@@ -291,35 +253,23 @@
                     <b>₱399</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="abaca-slippers.jpg"
+                    src="abaca-slippers.png"
                     alt="Tsinelas na Abaca"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- BANIG -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Banig
-                </h3>
+                <h3>Banig</h3>
 
                 <p>
                     Isang tradisyunal na hinabing sapin na gawa mula
@@ -331,35 +281,23 @@
                     <b>₱650</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="banig.jpg"
+                    src="banig.png"
                     alt="Banig"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- ABANIKO -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Abaniko (Pamaypay)
-                </h3>
+                <h3>Abaniko (Pamaypay)</h3>
 
                 <p>
                     Isang tradisyunal na pamaypay na ginagamit upang
@@ -371,35 +309,23 @@
                     <b>₱250</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="abaniko.jpg"
+                    src="abaniko.png"
                     alt="Abaniko o Pamaypay"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- CAPIZ PAROL -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Parol na Capiz
-                </h3>
+                <h3>Parol na Capiz</h3>
 
                 <p>
                     Isang makulay na parol na gawa sa capiz na
@@ -411,35 +337,23 @@
                     <b>₱1,200</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="capiz-parol.jpg"
+                    src="capiz-parol.png"
                     alt="Parol na Capiz"
                 >
-
             </td>
-
         </tr>
-
 
 
         <!-- BILAO -->
 
         <tr>
-
             <td>
-
-                <h3>
-                    Bilao
-                </h3>
+                <h3>Bilao</h3>
 
                 <p>
                     Isang tradisyunal na bilog na sisidlan na gawa sa
@@ -451,36 +365,25 @@
                     <b>₱300</b>
                 </p>
 
-                <a href="#contact">
-                    Bumili Ngayon
-                </a>
-
+                <a href="#contact">Bumili Ngayon</a>
             </td>
-
 
             <td class="product-image">
-
                 <img
-                    src="bilao.jpg"
+                    src="bilao.png"
                     alt="Bilao"
                 >
-
             </td>
-
         </tr>
-
 
     </table>
 
 </section>
 
 
-
 <section id="contact">
 
-    <h2>
-        Makipag-ugnayan sa Amin
-    </h2>
+    <h2>Makipag-ugnayan sa Amin</h2>
 
     <p>
         Interesado sa aming mga produkto?
@@ -493,24 +396,18 @@
 
 </section>
 
-
 </main>
-
 
 
 <footer>
 
-    <h3>
-        NINUNO
-    </h3>
+    <h3>NINUNO</h3>
 
     <p>
         <i>Dito Nagsimula ang Lahat</i>
     </p>
 
-    <p>
-        2026
-    </p>
+    <p>2026</p>
 
     <p>
         Gawa ni Thomas Matthew M. Quintela
@@ -518,7 +415,5 @@
 
 </footer>
 
-
 </body>
-
 </html>
