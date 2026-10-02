@@ -1,24 +1,126 @@
- <title>Ninuno</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ninuno</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
         body {
+            margin: 0;
             background-color: #F4EEDC;
             color: #2D2B2B;
-@@ -34,6 +35,7 @@
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4B2D25;
+            color: #F4EEDC;
+            padding-bottom: 30px;
+        }
+
+        .header-image {
+            display: block;
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin: 35px 0 10px;
+            font-family: Garamond, Georgia, serif;
+            font-size: 60px;
         }
 
         header p {
-            font-family: Georgia, serif;
-            font-size: 120%;
+            font-size: 20px;
         }
 
-@@ -99,16 +101,44 @@
+        nav {
+            background-color: #567A5C;
+            padding: 18px;
+        }
+
+        nav a {
+            color: #F4EEDC;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 35px 20px;
+        }
+
+        h2 {
+            color: #4B2D25;
+            font-family: Garamond, Georgia, serif;
+        }
+
+        h3 {
+            color: #913F32;
+            font-family: Garamond, Georgia, serif;
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #E8C7A1;
+        }
+
+        td {
+            border: 2px solid #4B2D25;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .product-image {
+            width: 360px;
+            text-align: center;
+            background-color: #F4EEDC;
+        }
+
+        .product-image img {
+            display: block;
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .price {
+            color: #913F32;
+            font-size: 23px;
+        }
+
+        footer {
+            background-color: #2D2B2B;
+            color: #F4EEDC;
+            padding: 25px;
+        }
+
         footer h3 {
             color: #E8C7A1;
         }
 
         @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 45px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
 
             table,
             tbody,
@@ -29,20 +131,19 @@
             }
 
             table {
-                width: 90%;
+                width: 92%;
             }
 
-            td {
-                box-sizing: border-box;
+            .product-image {
+                width: 100%;
             }
 
             .product-image img {
                 width: 100%;
+                max-width: 400px;
                 height: auto;
-                max-width: 300px;
             }
         }
-
     </style>
 
 </head>
@@ -54,12 +155,18 @@
 <header>
 
     <img
-        src="./logo.png"
-        src="logo.jpg"
+        src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/logo.jpg"
         alt="Larawan ng kulturang Pilipino"
         class="header-image"
     >
-@@ -123,17 +153,24 @@ <h1>NINUNO</h1>
+
+    <h1>NINUNO</h1>
+
+    <p>
+        <i>Dito Nagsimula ang Lahat</i>
+    </p>
+
+</header>
 
 
 <nav>
@@ -79,23 +186,18 @@
 <section id="home">
 
     <h2>Maligayang Pagdating sa Ninuno</h2>
-    <h2>
-        Maligayang Pagdating sa Ninuno
-    </h2>
 
     <p>
         Tuklasin ang mga produktong nagpapakita ng galing,
-@@ -143,271 +180,307 @@ <h2>Maligayang Pagdating sa Ninuno</h2>
-</section>
+        kultura, tradisyon, at pagkakakilanlan ng mga Pilipino.
+    </p>
 
+</section>
 
 
 <section id="products">
 
-<h2>Aming Mga Produkto</h2>
-    <h2>
-        Aming Mga Produkto
-    </h2>
+    <h2>Aming Mga Produkto</h2>
 
 
     <table>
@@ -105,351 +207,200 @@
 
         <tr>
 
-<table>
             <td>
 
-    <!-- BARONG -->
-                <h3>
-                    Barong Tagalog
-                </h3>
+                <h3>Barong Tagalog</h3>
 
-    <tr>
                 <p>
                     Isang tradisyunal na kasuotang Pilipino na karaniwang
                     isinusuot sa mga pormal na okasyon, kasal, at
                     mahahalagang pagdiriwang.
                 </p>
 
-        <td>
                 <p class="price">
                     <b>₱1,499</b>
                 </p>
 
-            <h3>Barong Tagalog</h3>
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
-            <p>
-                Isang tradisyunal na kasuotang Pilipino na karaniwang
-                isinusuot sa mga pormal na okasyon, kasal, at
-                mahahalagang pagdiriwang.
-            </p>
             </td>
 
-            <p class="price">
-                <b>₱1,499</b>
-            </p>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
             <td class="product-image">
 
-        </td>
                 <img
-                    src="barong.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/barong.jpg"
                     alt="Barong Tagalog"
                 >
 
-        <td class="product-image">
             </td>
 
-            <img
-                src="./barong.png"
-                alt="Barong Tagalog"
-            >
         </tr>
 
-        </td>
 
-    </tr>
 
         <!-- FILIPINIANA -->
 
-    <!-- FILIPINIANA -->
         <tr>
 
-    <tr>
             <td>
 
-        <td>
-                <h3>
-                    Filipiniana
-                </h3>
+                <h3>Filipiniana</h3>
 
-            <h3>Filipiniana</h3>
                 <p>
                     Isang eleganteng kasuotang Pilipina na kilala sa
                     makasaysayang disenyo at natatanging manggas na
                     sumasalamin sa kulturang Pilipino.
                 </p>
 
-            <p>
-                Isang eleganteng kasuotang Pilipina na kilala sa
-                makasaysayang disenyo at natatanging manggas na
-                sumasalamin sa kulturang Pilipino.
-            </p>
                 <p class="price">
                     <b>₱1,799</b>
                 </p>
 
-            <p class="price">
-                <b>₱1,799</b>
-            </p>
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
             </td>
 
-        </td>
 
-        <td class="product-image">
             <td class="product-image">
 
-            <img
-                src="./filipiniana.png"
-                alt="Filipiniana"
-            >
                 <img
-                    src="filipiniana.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/filipiniana.jpg"
                     alt="Filipiniana"
                 >
 
-        </td>
             </td>
 
-    </tr>
         </tr>
 
 
-    <!-- ABACA -->
 
-    <tr>
         <!-- ABACA SLIPPERS -->
 
-        <td>
         <tr>
 
-            <h3>Tsinelas na Abaca</h3>
             <td>
 
-            <p>
-                Magaan at matibay na tsinelas na gawa mula sa
-                hibla ng abaca, isang likas na materyal na kilala
-                sa Pilipinas.
-            </p>
-                <h3>
-                    Tsinelas na Abaca
-                </h3>
+                <h3>Tsinelas na Abaca</h3>
 
-            <p class="price">
-                <b>₱399</b>
-            </p>
                 <p>
                     Magaan at matibay na tsinelas na gawa mula sa
                     hibla ng abaca, isang likas na materyal na kilala
                     sa Pilipinas.
                 </p>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
                 <p class="price">
                     <b>₱399</b>
                 </p>
 
-        </td>
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
-        <td class="product-image">
             </td>
 
-            <img
-                src="./abaca-slippers.png"
-                alt="Tsinelas na Abaca"
-            >
 
-        </td>
             <td class="product-image">
 
-    </tr>
                 <img
-                    src="abaca-slippers.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/abaca-slippers.jpg"
                     alt="Tsinelas na Abaca"
                 >
 
             </td>
 
-    <!-- BANIG -->
         </tr>
 
-    <tr>
 
-        <td>
 
-            <h3>Banig</h3>
         <!-- BANIG -->
 
-            <p>
-                Isang tradisyunal na hinabing sapin na gawa mula
-                sa mga likas na materyales at kilala sa makukulay
-                nitong disenyo.
-            </p>
         <tr>
 
-            <p class="price">
-                <b>₱650</b>
-            </p>
             <td>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
-                <h3>
-                    Banig
-                </h3>
+                <h3>Banig</h3>
 
-        </td>
                 <p>
                     Isang tradisyunal na hinabing sapin na gawa mula
                     sa mga likas na materyales at kilala sa makukulay
                     nitong disenyo.
                 </p>
 
-        <td class="product-image">
                 <p class="price">
                     <b>₱650</b>
                 </p>
 
-            <img
-                src="./banig.png"
-                alt="Banig"
-            >
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
-        </td>
             </td>
 
-    </tr>
 
             <td class="product-image">
 
-    <!-- ABANIKO -->
                 <img
-                    src="banig.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/banig.jpg"
                     alt="Banig"
                 >
 
-    <tr>
             </td>
 
-        <td>
         </tr>
 
-            <h3>Abaniko (Pamaypay)</h3>
 
-            <p>
-                Isang tradisyunal na pamaypay na ginagamit upang
-                magbigay-ginhawa sa mainit na panahon at maaari ring
-                magsilbing magandang palamuti.
-            </p>
 
-            <p class="price">
-                <b>₱250</b>
-            </p>
         <!-- ABANIKO -->
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
         <tr>
 
-        </td>
             <td>
 
-        <td class="product-image">
-                <h3>
-                    Abaniko (Pamaypay)
-                </h3>
+                <h3>Abaniko (Pamaypay)</h3>
 
-            <img
-                src="./abaniko.png"
-                alt="Abaniko o Pamaypay"
-            >
                 <p>
                     Isang tradisyunal na pamaypay na ginagamit upang
                     magbigay-ginhawa sa mainit na panahon at maaari ring
                     magsilbing magandang palamuti.
                 </p>
 
-        </td>
                 <p class="price">
                     <b>₱250</b>
                 </p>
 
-    </tr>
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
             </td>
 
-    <!-- CAPIZ PAROL -->
 
-    <tr>
             <td class="product-image">
 
-        <td>
                 <img
-                    src="abaniko.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/abaniko.jpg"
                     alt="Abaniko o Pamaypay"
                 >
 
-            <h3>Parol na Capiz</h3>
             </td>
 
-            <p>
-                Isang makulay na parol na gawa sa capiz na
-                sumisimbolo sa liwanag, pag-asa, at tradisyon
-                ng Paskong Pilipino.
-            </p>
         </tr>
 
-            <p class="price">
-                <b>₱1,200</b>
-            </p>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
 
-        </td>
         <!-- CAPIZ PAROL -->
 
-        <td class="product-image">
         <tr>
 
-            <img
-                src="./capiz-parol.png"
-                alt="Parol na Capiz"
-            >
             <td>
 
-        </td>
-                <h3>
-                    Parol na Capiz
-                </h3>
+                <h3>Parol na Capiz</h3>
 
-    </tr>
                 <p>
                     Isang makulay na parol na gawa sa capiz na
                     sumisimbolo sa liwanag, pag-asa, at tradisyon
@@ -460,59 +411,33 @@
                     <b>₱1,200</b>
                 </p>
 
-    <!-- BILAO -->
                 <a href="#contact">
                     Bumili Ngayon
                 </a>
 
-    <tr>
             </td>
 
-        <td>
 
-            <h3>Bilao</h3>
             <td class="product-image">
 
-            <p>
-                Isang tradisyunal na bilog na sisidlan na gawa sa
-                hinabing kawayan at karaniwang ginagamit sa
-                paghahain o paghahanda ng pagkain.
-            </p>
                 <img
-                    src="capiz-parol.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/capiz-parol.jpg"
                     alt="Parol na Capiz"
                 >
 
-            <p class="price">
-                <b>₱300</b>
-            </p>
             </td>
 
-            <a href="#contact">
-                Bumili Ngayon
-            </a>
         </tr>
 
-        </td>
 
-        <td class="product-image">
 
-            <img
-                src="./bilao.png"
-                alt="Bilao"
-            >
         <!-- BILAO -->
 
-        </td>
         <tr>
 
-    </tr>
             <td>
 
-</table>
-                <h3>
-                    Bilao
-                </h3>
+                <h3>Bilao</h3>
 
                 <p>
                     Isang tradisyunal na bilog na sisidlan na gawa sa
@@ -534,7 +459,7 @@
             <td class="product-image">
 
                 <img
-                    src="bilao.jpg"
+                    src="https://matteodoz.github.io/CBIA100/CODING%20PROJ/bilao.jpg"
                     alt="Bilao"
                 >
 
@@ -548,17 +473,18 @@
 </section>
 
 
-
 <section id="contact">
 
     <h2>Makipag-ugnayan sa Amin</h2>
-    <h2>
-        Makipag-ugnayan sa Amin
-    </h2>
 
     <p>
         Interesado sa aming mga produkto?
-@@ -420,24 +493,32 @@ <h2>Makipag-ugnayan sa Amin</h2>
+        Makipag-ugnayan sa Ninuno sa pamamagitan ng aming Facebook page.
+    </p>
+
+    <a href="https://www.facebook.com/matteodozaa">
+        Bisitahin ang Aming Facebook Page
+    </a>
 
 </section>
 
@@ -566,22 +492,15 @@
 </main>
 
 
-
 <footer>
 
     <h3>NINUNO</h3>
-    <h3>
-        NINUNO
-    </h3>
 
     <p>
         <i>Dito Nagsimula ang Lahat</i>
     </p>
 
     <p>2026</p>
-    <p>
-        2026
-    </p>
 
     <p>
         Gawa ni Thomas Matthew M. Quintela
@@ -591,5 +510,4 @@
 
 
 </body>
-
 </html>
