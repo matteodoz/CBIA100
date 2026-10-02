@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ninuno</title>
 
     <style>
-
         body {
             background-color: #F4EEDC;
             color: #2D2B2B;
-            font-family: Georgia;
+            font-family: Georgia, serif;
             text-align: center;
             margin: 0;
         }
@@ -24,15 +25,15 @@
         .header-image {
             width: 100%;
             height: auto;
+            display: block;
         }
 
         header h1 {
-            font-family: Garamond;
+            font-family: Garamond, serif;
             font-size: 350%;
         }
 
         header p {
-            font-family: Georgia;
             font-size: 120%;
         }
 
@@ -51,12 +52,12 @@
         }
 
         h2 {
-            font-family: Garamond;
+            font-family: Garamond, serif;
             color: #4B2D25;
         }
 
         h3 {
-            font-family: Garamond;
+            font-family: Garamond, serif;
             color: #913F32;
         }
 
@@ -98,20 +99,19 @@
         footer h3 {
             color: #E8C7A1;
         }
-
     </style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
-    <img src="logo.png"
-         alt="Larawan ng kulturang Pilipino"
-         class="header-image">
+    <img
+        src="./logo.png"
+        alt="Larawan ng kulturang Pilipino"
+        class="header-image"
+    >
 
     <h1>NINUNO</h1>
 
@@ -123,18 +123,13 @@
 
 
 <nav>
-
     <a href="#home">Tahanan</a>
-
     <a href="#products">Mga Produkto</a>
-
     <a href="#contact">Makipag-ugnayan</a>
-
 </nav>
 
 
 <main>
-
 
 <section id="home">
 
@@ -150,229 +145,262 @@
 
 <section id="products">
 
-    <h2>Aming Mga Produkto</h2>
+<h2>Aming Mga Produkto</h2>
 
-    <table>
+<table>
 
+    <!-- BARONG -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Barong Tagalog</h3>
+            <h3>Barong Tagalog</h3>
 
-                <p>
-                    Isang tradisyunal na kasuotang Pilipino na karaniwang
-                    isinusuot sa mga pormal na okasyon, kasal, at
-                    mahahalagang pagdiriwang.
-                </p>
+            <p>
+                Isang tradisyunal na kasuotang Pilipino na karaniwang
+                isinusuot sa mga pormal na okasyon, kasal, at
+                mahahalagang pagdiriwang.
+            </p>
 
-                <p class="price">
-                    <b>₱1,499</b>
-                </p>
+            <p class="price">
+                <b>₱1,499</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./barong.png"
+                alt="Barong Tagalog"
+            >
 
-                <img src="barong.png"
-                     alt="Barong Tagalog">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- FILIPINIANA -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Filipiniana</h3>
+            <h3>Filipiniana</h3>
 
-                <p>
-                    Isang eleganteng kasuotang Pilipina na kilala sa
-                    makasaysayang disenyo at natatanging manggas na
-                    sumasalamin sa kulturang Pilipino.
-                </p>
+            <p>
+                Isang eleganteng kasuotang Pilipina na kilala sa
+                makasaysayang disenyo at natatanging manggas na
+                sumasalamin sa kulturang Pilipino.
+            </p>
 
-                <p class="price">
-                    <b>₱1,799</b>
-                </p>
+            <p class="price">
+                <b>₱1,799</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./filipiniana.png"
+                alt="Filipiniana"
+            >
 
-                <img src="filipiniana.png"
-                     alt="Filipiniana">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- ABACA -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Tsinelas na Abaca</h3>
+            <h3>Tsinelas na Abaca</h3>
 
-                <p>
-                    Magaan at matibay na tsinelas na gawa mula sa
-                    hibla ng abaca, isang likas na materyal na kilala
-                    sa Pilipinas.
-                </p>
+            <p>
+                Magaan at matibay na tsinelas na gawa mula sa
+                hibla ng abaca, isang likas na materyal na kilala
+                sa Pilipinas.
+            </p>
 
-                <p class="price">
-                    <b>₱399</b>
-                </p>
+            <p class="price">
+                <b>₱399</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./abaca-slippers.png"
+                alt="Tsinelas na Abaca"
+            >
 
-                <img src="abaca-slippers.png"
-                     alt="Tsinelas na Abaca">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- BANIG -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Banig</h3>
+            <h3>Banig</h3>
 
-                <p>
-                    Isang tradisyunal na hinabing sapin na gawa mula
-                    sa mga likas na materyales at kilala sa makukulay
-                    nitong disenyo.
-                </p>
+            <p>
+                Isang tradisyunal na hinabing sapin na gawa mula
+                sa mga likas na materyales at kilala sa makukulay
+                nitong disenyo.
+            </p>
 
-                <p class="price">
-                    <b>₱650</b>
-                </p>
+            <p class="price">
+                <b>₱650</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./banig.png"
+                alt="Banig"
+            >
 
-                <img src="banig.png"
-                     alt="Banig">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- ABANIKO -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Abaniko (Pamaypay)</h3>
+            <h3>Abaniko (Pamaypay)</h3>
 
-                <p>
-                    Isang tradisyunal na pamaypay na ginagamit upang
-                    magbigay-ginhawa sa mainit na panahon at maaari ring
-                    magsilbing magandang palamuti.
-                </p>
+            <p>
+                Isang tradisyunal na pamaypay na ginagamit upang
+                magbigay-ginhawa sa mainit na panahon at maaari ring
+                magsilbing magandang palamuti.
+            </p>
 
-                <p class="price">
-                    <b>₱250</b>
-                </p>
+            <p class="price">
+                <b>₱250</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./abaniko.png"
+                alt="Abaniko o Pamaypay"
+            >
 
-                <img src="abaniko.png"
-                     alt="Abaniko o Pamaypay">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- CAPIZ PAROL -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Parol na Capiz</h3>
+            <h3>Parol na Capiz</h3>
 
-                <p>
-                    Isang makulay na parol na gawa sa capiz na
-                    sumisimbolo sa liwanag, pag-asa, at tradisyon
-                    ng Paskong Pilipino.
-                </p>
+            <p>
+                Isang makulay na parol na gawa sa capiz na
+                sumisimbolo sa liwanag, pag-asa, at tradisyon
+                ng Paskong Pilipino.
+            </p>
 
-                <p class="price">
-                    <b>₱1,200</b>
-                </p>
+            <p class="price">
+                <b>₱1,200</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./capiz-parol.png"
+                alt="Parol na Capiz"
+            >
 
-                <img src="capiz-parol.png"
-                     alt="Parol na Capiz">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
 
+    <!-- BILAO -->
 
-        <tr>
+    <tr>
 
-            <td>
+        <td>
 
-                <h3>Bilao</h3>
+            <h3>Bilao</h3>
 
-                <p>
-                    Isang tradisyunal na bilog na sisidlan na gawa sa
-                    hinabing kawayan at karaniwang ginagamit sa
-                    paghahain o paghahanda ng pagkain.
-                </p>
+            <p>
+                Isang tradisyunal na bilog na sisidlan na gawa sa
+                hinabing kawayan at karaniwang ginagamit sa
+                paghahain o paghahanda ng pagkain.
+            </p>
 
-                <p class="price">
-                    <b>₱300</b>
-                </p>
+            <p class="price">
+                <b>₱300</b>
+            </p>
 
-                <a href="#contact">Bumili Ngayon</a>
+            <a href="#contact">
+                Bumili Ngayon
+            </a>
 
-            </td>
+        </td>
 
+        <td class="product-image">
 
-            <td class="product-image">
+            <img
+                src="./bilao.png"
+                alt="Bilao"
+            >
 
-                <img src="bilao.png"
-                     alt="Bilao">
+        </td>
 
-            </td>
+    </tr>
 
-        </tr>
-
-
-    </table>
+</table>
 
 </section>
 
@@ -391,7 +419,6 @@
     </a>
 
 </section>
-
 
 </main>
 
@@ -412,7 +439,5 @@
 
 </footer>
 
-
 </body>
-
 </html>
